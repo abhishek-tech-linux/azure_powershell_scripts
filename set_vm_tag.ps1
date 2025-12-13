@@ -1,5 +1,5 @@
 ### Set VM level tag for SUSD to Excluded if not set ###
-## Connect-AzAccount -Subscription 'asosbuyandmerch' ##
+## Connect-AzAccount -Subscription '' ##
 
 
 [string[]] $VmNames= @()
@@ -15,4 +15,5 @@ Update-AzTag -ResourceId $vmid.Id -Tag $Tags -Operation Replace
 else{
   Write-output "SUSD schedule is already excluded for " $vmid.Name
 }
+
 }
