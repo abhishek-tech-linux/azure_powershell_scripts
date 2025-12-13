@@ -1,5 +1,5 @@
 ### Check ALL VM level tags  ###
-## Connect-AzAccount -Subscription 'asosbuyandmerch' ##
+## Connect-AzAccount -Subscription '' ##
 
 [string[]] $VmNames= @()
 $VmNames = Read-Host -Prompt 'Input your server list:'
@@ -10,4 +10,5 @@ $vmid.Name
 Write-output "######################## "
 $vmid.tags
 Write-output "************************ "
+
 }
